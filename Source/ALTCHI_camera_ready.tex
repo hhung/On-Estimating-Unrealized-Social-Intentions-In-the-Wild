@@ -507,8 +507,9 @@ Ishii et al. showed that gaze-transition patterns are useful for predicting the 
   \vspace{-5mm}
   \caption{Overview of our approach. The dashed lines indicate the flow of only accelerometer data. 
 % Note that the model is \emph{not} trained on the unrealized intentions to speak.
+}
     \Description{Schematic overview of the approach for the case study. The first section is the REWIND dataset, which is divided into four sources of information: voice-activation-detection, accelerometer, audio, and video. The next three sections are: positive samples (realized intentions to speak), negative samples, and unrealized intentions to speak. For the positive samples voice-activation-detection and accelerometer data are used. For the negative samples, the accelerometer data and the extracted positive samples are used (to make sure there is no overlap). For the labelling of the unrealized intentions to speak, audio and video data is used. The accelerometer data of the labelled segments is stored. Next, the accelerometer data of the positive and negative samples is used to train the model. The model is then evaluated on the accelerometer data of the positive and negative samples, and the accelerometer data of the labelled unrealized intentions.}
-}  \vspace{-6mm}
+ \vspace{-6mm}
 
   \label{fig:overview}
 \end{figure}
